@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox experiments</title>
+
+    <link rel="stylesheet" href="flex-styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>CSS Flexbox experiments</h1>
+        <p>A compilation of CSS techniques presented in the freeCodeCamp <a title="freeCodeCamp tutorials" href="https://www.freecodecamp.org/learn/responsive-web-design/css-flexbox/">CSS Flexbox tutorial</a>.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">CSS: All the Divs</a></li>
+                <li>CSS Flexbox experiments</li>
+                <li><a href="grid.html">CSS Grid demo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <header id="tweet-header">
+                <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg" alt="Quincy Larson's profile picture" class="profile-thumbnail">
+                <div class="profile-name">
+                  <h3>Quincy Larson</h3>
+                  <h4>@ossia</h4>
+                </div>
+                <div class="follow-btn">
+                  <button>Follow</button>
+                </div>
+              </header>
+              <div id="inner">
+                <p>I meet so many people who are in search of that one trick that will help them work smart. Even if you work smart, you still have to work hard.</p>
+                <span class="date">1:32 PM - 12 Jan 2018</span>
+                <hr>
+              </div>
+              <footer>
+                <div class="stats">
+                  <div class="Retweets">
+                    <strong>107</strong> Retweets
+                  </div>
+                  <div class="likes">
+                    <strong>431</strong> Likes
+                  </div>
+                </div>
+                <div class="cta">
+                  <button class="share-btn">Share</button>
+                  <button class="retweet-btn">Retweet</button>
+                  <button class="like-btn">Like</button>
+                </div>
+              </footer>
+        </section>
+        <section id="all-the-flex">
+            <p>display: flex, 50% width children</p>
+            <div class="box-container">
+                <div class="box-1">box 1</div>
+                <div class="box-2">box 2</div>
+            </div>
+            <p>flex-direction: row-reverse, 50% width children</p>
+            <div class="box-container row-reverse">
+                <div class="box-1">box 1</div>
+                <div class="box-2">box 2</div>
+            </div>
+            <p>flex-direction: column, 50% width children</p>
+            <div class="box-container column">
+                <div class="box-1">box 1</div>
+                <div class="box-2">box 2</div>
+            </div>
+            <p>flex row, 25% width children, justify-content: center</p>
+            <div class="box-container center">
+                <div class="box-a">box a</div>
+                <div class="box-b">box b</div>
+            </div>
+            <p>flex row, 20% width children, justify-content: center</p>
+            <div class="box-container center">
+                <div class="box-c">box c</div>
+                <div class="box-d">box d</div>
+                <div class="box-e">box e</div>
+                <div class="box-f">box f</div>
+            </div>
+            <p>flex row, 25% width children, justify-content: flex-start (default)</p>
+            <div class="box-container flex-start">
+                <div class="box-a">box a</div>
+                <div class="box-b">box b</div>
+            </div>
+            <p>flex row, 20% width children, justify-content: flex-start (default)</p>
+            <div class="box-container flex-start">
+                <div class="box-c">box c</div>
+                <div class="box-d">box d</div>
+                <div class="box-e">box e</div>
+                <div class="box-f">box f</div>
+            </div>
+            <p>flex row, justify-content: flex-end</p>
+            <div class="box-container flex-end">
+                <div class="box-a">box a</div>
+                <div class="box-b">box b</div>
+            </div>
+            <div class="box-container flex-end">
+                <div class="box-c">box c</div>
+                <div class="box-d">box d</div>
+                <div class="box-e">box e</div>
+                <div class="box-f">box f</div>
+            </div>
+            <p>flex row, justify-content: space-between</p>
+            <div class="box-container space-between">
+                <div class="box-a">box a</div>
+                <div class="box-b">box b</div>
+            </div>
+            <div class="box-container space-between">
+                <div class="box-c">box c</div>
+                <div class="box-d">box d</div>
+                <div class="box-e">box e</div>
+                <div class="box-f">box f</div>
+            </div>
+            <p>flex row, justify-content: space-around</p>
+            <div class="box-container space-around">
+                <div class="box-a">box a</div>
+                <div class="box-b">box b</div>
+            </div>
+            <div class="box-container space-around">
+                <div class="box-c">box c</div>
+                <div class="box-d">box d</div>
+                <div class="box-e">box e</div>
+                <div class="box-f">box f</div>
+            </div>
+            <p>flex row, justify-content: space-evenly</p>
+            <div class="box-container space-between">
+                <div class="box-a">box a</div>
+                <div class="box-b">box b</div>
+            </div>
+            <div class="box-container space-between">
+                <div class="box-c">box c</div>
+                <div class="box-d">box d</div>
+                <div class="box-e">box e</div>
+                <div class="box-f">box f</div>
+            </div>
+            <p>flex row, justify-content: stretch w % widths (no effect)</p>
+            <div class="box-container stretch">
+                <div class="box-a">box a</div>
+                <div class="box-b">box b</div>
+            </div>
+            <div class="box-container stretch">
+                <div class="box-c">box c</div>
+                <div class="box-d">box d</div>
+                <div class="box-e">box e</div>
+                <div class="box-f">box f</div>
+            </div>
+            <p>flex row, 25% width children, align-items: center</p>
+            <div class="box-container align-center">
+                <div class="box-a">box a</div>
+                <div class="box-b">box b</div>
+            </div>
+            <p>flex row, 25% width children, align-items: flex-start</p>
+            <div class="box-container align-start">
+                <div class="box-a">box a</div>
+                <div class="box-b">box b</div>
+            </div>
+            <p>flex row, 25% width children, align-items: flex-end</p>
+            <div class="box-container align-end">
+                <div class="box-a">box a</div>
+                <div class="box-b">box b</div>
+            </div>
+            <p>flex row, 20% width children, flex-wrap: nowrap (default)</p>
+            <div class="box-container">
+                <div class="box-c">box c</div>
+                <div class="box-d">box d</div>
+                <div class="box-e">box e</div>
+                <div class="box-f">box f</div>
+                <div class="box-c">box c2</div>
+                <div class="box-d">box d2</div>
+                <div class="box-e">box e2</div>
+                <div class="box-f">box f2</div>
+            </div>
+            <p>flex row, 20% width children, flex-wrap: wrap</p>
+            <div class="box-container wrap">
+                <div class="box-c">box c</div>
+                <div class="box-d">box d</div>
+                <div class="box-e">box e</div>
+                <div class="box-f">box f</div>
+                <div class="box-c">box c2</div>
+                <div class="box-d">box d2</div>
+                <div class="box-e">box e2</div>
+                <div class="box-f">box f2</div>
+            </div>
+            <p>flex row, 20% width children, flex-wrap: wrap-reverse</p>
+            <div class="box-container wrap-reverse">
+                <div class="box-c">box c</div>
+                <div class="box-d">box d</div>
+                <div class="box-e">box e</div>
+                <div class="box-f">box f</div>
+                <div class="box-c">box c2</div>
+                <div class="box-d">box d2</div>
+                <div class="box-e">box e2</div>
+                <div class="box-f">box f2</div>
+            </div>
+            <p>flex row, 100% width children</p>
+            <div class="box-container">
+                <div class="box-g shrink-1">box g flex-shrink:1</div>
+                <div class="box-h shrink-2">box h flex-shrink:2</div>
+            </div>
+            <p>flex row, 100% width children</p>
+            <div class="box-container">
+                <div class="box-g shrink-1">box g flex-shrink:1</div>
+                <div class="box-h shrink-2">box h flex-shrink:2</div>
+                <div class="box-g shrink-1">box g flex-shrink:1</div>
+                <div class="box-h shrink-2">box h flex-shrink:2</div>
+            </div>
+            <p>flex row, child width not specified</p>
+            <div class="box-container">
+                <div class="box-i grow-1">box i flex-grow: 1</div>
+                <div class="box-j grow-2">box j flex-grow: 2</div>
+            </div>
+            <p>flex row, child width not specified</p>
+            <div class="box-container">
+                <div class="box-i grow-1">box i flex-grow: 1</div>
+                <div class="box-j grow-2">box j flex-grow: 2</div>
+                <div class="box-i grow-1">box i flex-grow: 1</div>
+                <div class="box-j grow-2">box j flex-grow: 2</div>
+            </div>
+            <p>flex row, child width not specified</p>
+            <div class="box-container">
+                <div class="box-i basis-10">box i flex-basis: 10em</div>
+                <div class="box-j basis-20">box j flex-basis: 20em</div>
+            </div>
+            <p>flex row, child width not specified - flex shorthand <a href="#" title="'These values will cause #box-1 to grow to fill the extra space at twice the rate of #box-2 when the container is greater than 300px and shrink at twice the rate of #box-2 when the container is less than 300px. 300px is the combined size of the flex-basis values of the two boxes.'">what?</a></p>
+            <div class="box-container">
+                <div class="box-i" style="flex: 1 1 150px;">box i flex: 2 2 150px</div>
+                <div class="box-j" style="flex: 2 2 150px;">box j flex: 1 1 150px</div>
+            </div>
+            <p>flex row, fixed width, child width not specified - flex shorthand <a href="#" title="'These values will cause #box-1 to grow to fill the extra space at twice the rate of #box-2 when the container is greater than 300px and shrink at twice the rate of #box-2 when the container is less than 300px. 300px is the combined size of the flex-basis values of the two boxes.'">what?</a></p>
+            <div class="box-container" style="width: 200px;">
+                <div class="box-i" style="flex: 1 1 150px;">box i flex: 2 2 150px</div>
+                <div class="box-j" style="flex: 2 2 150px;">box j flex: 1 1 150px</div>
+            </div>
+            <p>flex row, 50% width children, reordering</p>
+            <div class="box-container">
+                <div class="box-1" style="order: 2;">box 1 order: 2</div>
+                <div class="box-2" style="order: 1;">box 2 order: 1</div>
+            </div>
+            <p>flex row, 50% width children, aligning selves w/o align-items</p>
+            <div class="box-container">
+                <div class="box-1" style="align-self: center;">box 1 align-self: center</div>
+                <div class="box-2" style="align-self: flex-end;">box 2 align-self: flex-end</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

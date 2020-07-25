@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: All the Divs</title>
+
+    <link rel="stylesheet" href="div-styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>CSS: All the Divs</h1>
+        <p>A compilation of CSS techniques presented in the freeCodeCamp
+            <a title="freeCodeCamp CSS tutorial" href="https://www.freecodecamp.org/learn/responsive-web-design/basic-css/">Basic CSS</a>
+            and <a title="freeCodeCamp design tutorial" href="https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design">Applied Visual Design</a> tutorials.</p>
+        <nav>
+            <ul>
+                <li>CSS: All the Divs</li>
+                <li><a href="flex-box.html">CSS Flexbox experiments</a></li>
+                <li><a href="grid.html">CSS Grid demo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- text -->
+        <div class="outer">
+            <div style="background-color: lightcyan;">just a div in a div</div>
+            <div>&nbsp;</div>
+            <div style="font-weight: 200">font-weight: 200</div>
+            <div style="font-weight: 400">font-weight: 400 (norm)</div>
+            <div style="font-weight: 600">font-weight: 600</div>
+            <div style="font-weight: 800">font-weight: 700 (bold)</div>
+            <div style="font-weight: 1000">font-weight: 1000</div>
+        </div>
+        <div class="outer"> <div id="just-div-justify">just a div in a div with a lot of text that is justified and goes on and on blah blah blah blah blah blah blah lorem ipsum dolor sit amet blah</div> </div>
+        <div class="outer">
+            <div style="text-transform: uppercase;">text-transform: uppercase</div>
+            <div style="text-transform: lowercase;">TEXT-TRANSFORM: LOWERCASE</div>
+            <div style="text-transform: capitalize;">text-transform: capitalize</div>
+        </div>
+        <div class="outer"> <p style="line-height: 1.5em;">Line height 1.5 em: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> </div>
+
+        <!-- coloring -->
+        <div class="outer">
+            <div style="background-color: #FFA500;">hex orange #FFA500</div>
+            <div style="background-color: #F0F;">short hex fuschia #F0F</div>
+            <div style="background-color: rgb(218, 112, 214);">rgb orchid rgb(218, 112, 214)</div>
+        </div>
+        <div class="outer">
+            <div>split-complementary colors</div>
+            <div style="background-color: #FF7F00">orange #FF7F00</div>
+            <div style="background-color: #00FFFF">cyan #00FFFF</div>
+            <div style="background-color: #FF007F">raspberry #FF007F</div>
+        </div>
+        <div class="outer">
+            <div style="background-color: hsl(0, 100%, 50%);"> red hsl(0, 100%, 50%) </div>
+            <div style="background-color: hsl(120, 100%, 50%);"> green hsl(120, 100%, 50%) </div>
+            <div style="background-color: hsl(240, 100%, 50%);"> blue hsl(240, 100%, 50%) </div>
+            <div style="background-color: hsl(300, 100%, 50%);">magenta hsl(300, 100%, 50%)</div>
+        </div>
+        <div class="outer">
+            <div style="background-color: hsl(180, 100%, 50%);"> cyan hsl(180, 100%, 50%) </div>
+            <div style="background-color: hsl(180, 90%, 35%);"> cyan hsl(180, 90%, 35%) </div>
+            <div style="background-color: hsl(180, 80%, 25%);"> cyan hsl(180, 80%, 25%) </div>
+        </div>
+        <div class="outer"> <div id="translucent">translucent <br> opacity 0.7 </div> </div>
+        <div class="outer"> <div id="media-query-controlled">media-query var controlled <br> breakpoint: 1000px </div> </div>
+
+        <!-- dimensions, padding, and margin -->
+        <div class="outer"> <div id="padding-10-20-30-40">padding <br> 10-20-30-40</div> </div>
+        <div class="outer"> <div id="margin-10-20-30-40">margin <br> 10-20-30-40</div> </div>
+        <div class="outer"> <div id="negative-margin">negative margin</div> </div>
+        <div class="outer"> <div id="width-150">width 150</div> </div>
+        <div class="outer"> <div id="height-150">height 150</div> </div>
+        <div class="outer">
+            <div id="border-radius-5">border-radius <br> 5px</div>
+            <div id="border-radius-10">border-radius <br> 10px</div>
+        </div>
+        <div class="outer"> <div id="relative-padding">relative <br> padding 1.5em</div> </div>
+        <div class="outer"> <div id="relative-padding-small">relative padding <br> 1.5em small font</div> </div>
+        <div class="outer"> <div id="box-shadow">box shadow</div> </div>
+        <div class="outer"> <div id="double-box-shadow">double box shadow</div> </div>
+        <div class="outer"> <div id="margin-auto"> margin auto auto </div> </div>
+        <div class="outer"> <div id="margin-50-auto"> margin 50px auto </div> </div>
+        <div class="outer"> <div id="pct-margin-20-dimen-50"> margins 20% <br> padding 5% <br> dimensions <br> 50% </div> </div>
+        <div class="outer"> <div id="float-left">float left</div> <div id="float-right">float right</div> </div>
+        <div class="outer"> <div id="relative-top-30">position relative top 30</div> </div>
+        <div class="outer"> <div id="relative-top-50-right-20">position relative top 50 right 20</div> </div>
+        <div class="outer"> <div class="relative-parent" id="back-of-absolute"> <div>this div is before</div> <div id="absolute">absolute 50-0</div> <div>this div is after</div> </div> </div>
+        <div class="outer"> <div class="relative-parent"> <div id="abs-z-index-0">absolute z-index 0</div> <div id="abs-z-index-1">absolute z-index 1</div> </div> </div>
+        <div class="outer"> <div class="relative-parent" style="height: 100%;"> <div id="pin-to-bottom">pinned to bottom</div> </div> </div>
+
+        <!-- misc -->
+        <div class="outer"> <label><input type="radio">attribute-selected</label> </div>
+
+        <!-- fancy -->
+        <div class="outer"> <div id="texture">texture image </div> </div>
+        <div class="outer"> <div id="linear-gradient">background: linear-gradient(35deg, #CCFFFF, #FFCCCC)</div> </div>
+        <div class="outer"> <div id="repeating-linear-gradient">repeating linear gradient</div>  </div>
+        <div class="outer"> <div id="stripes">repeating linear gradient - stripes</div> </div>
+        <div class="outer"> <div id="skew-x">transform: <br> skewX(30)</div> </div>
+        <div class="outer"> <div id="skew-y">transform: <br> skewY(30)</div> </div>
+        <div class="outer">
+            <div> transform: scale(2) </div>
+            <div class="relative-parent">
+                <div class="gradient-ball" id="ball1">ball</div>
+                <div class="gradient-ball" id="ball2">ball</div>
+            </div>
+        </div>
+        <div class="outer"> <div id="hover-effects">hover effects</div> </div>
+        <div class="outer">
+            <div>button style + hover animation w fill mode</div>
+            <button id="hover-button">click</button>
+        </div>
+        <div class="outer">
+            <div class="relative-parent">
+                <div>infinite animation w bounce effect</div>
+                <div class="gradient-ball" id="bouncy-ball"></div>
+            </div>
+        </div>
+        <div class="outer">
+            <div class="relative-parent">
+                <div>basic animation timing functions <br> ease | linear | ease out</div>
+                <div class="gradient-ball" id="ease-ball"></div>
+                <div class="gradient-ball" id="linear-ball"></div>
+                <div class="gradient-ball" id="ease-out-ball"></div>
+            </div>
+        </div>
+        <div class="outer">
+            <div class="relative-parent">
+                <div>juggle effect with bezier curve</div>
+                <div class="gradient-ball" id="juggle-ball-1"></div>
+                <div class="gradient-ball" id="juggle-ball-2"></div>
+                <div class="gradient-ball" id="juggle-ball-3"></div>
+            </div>
+        </div>
+        <div class="outer">
+            <div id="night-sky">
+                <div class="star" id="star1"></div>
+                <div class="star" id="star2"></div>
+                <div class="star" id="star3"></div>
+            </div>
+        </div>
+        <div class="outer"> <div class="relative-parent"> <div id="moon"></div> </div> </div>
+        <div class="outer"> <div class="relative-parent"> <div id="heart"></div> </div> </div>
+        <div class="outer"> 
+            <div class="relative-parent">
+                <div class="penguin">
+                    <div class="penguin-bottom">
+                    <div class="right-hand"></div>
+                    <div class="left-hand"></div>
+                    <div class="right-feet"></div>
+                    <div class="left-feet"></div>
+                    </div>
+                    <div class="penguin-top">
+                    <div class="right-cheek"></div>
+                    <div class="left-cheek"></div>
+                    <div class="belly"></div>
+                    <div class="right-eye">
+                        <div class="sparkle"></div>
+                    </div>
+                    <div class="left-eye">
+                        <div class="sparkle"></div>
+                    </div>
+                    <div class="blush-right"></div>
+                    <div class="blush-left"></div>
+                    <div class="beak-top"></div>
+                    <div class="beak-bottom"></div>
+                    </div>
+                </div>
+                <div id="under-penguin">
+                    hover to change
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-pad">&nbsp;</div>
+        <footer>sticky footer | position: fixed | opactiy: 0.9 | z-index: 999 | width: 100% | left: 0 bottom: 0</footer>
+    </main>
+</body>
+</html>
