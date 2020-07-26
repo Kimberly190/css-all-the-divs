@@ -9,3 +9,7 @@ Demonstration / cheat sheet of all CSS techniques learned in the freeCodeCamp mo
 flex-box.html
 
 A compilation of CSS techniques presented in the freeCodeCamp [CSS Flexbox tutorial](https://www.freecodecamp.org/learn/responsive-web-design/css-flexbox/).
+
+grid.html
+
+A compilation of CSS techniques presented in the freeCodeCamp [CSS Grid tutorial](https://www.freecodecamp.org/learn/responsive-web-design/css-grid/).
