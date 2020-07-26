@@ -67,6 +67,142 @@
             <div class="d4">4</div>
             <div class="d5">5</div>
         </div>
+        <p>specifying range for grid-column: 2 / 4 (2nd line to 4th = 2nd and 3rd cols)</p>
+        <div class="container grid g3x3">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5" style="grid-column: 2 / 4">5</div>
+        </div>
+        <p>grid-column: 2 / 4 ; grid-row: 2 / 4</p>
+        <div class="container grid g3x3">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5" style="grid-column: 2 / 4; grid-row: 2 / 4;">5</div>
+        </div>
+        <p>justify-self: start, end, center, baseline, right, etc.</p>
+        <div class="container grid g3x3">
+            <div class="d1" style="justify-self: start;">1</div>
+            <div class="d2" style="justify-self: end;">2</div>
+            <div class="d3" style="justify-self: center;">3</div>
+            <div class="d4" style="justify-self: baseline;">4</div>
+            <div class="d5" style="justify-self: right;">5</div>
+        </div>
+        <p>align-self: start, end, center, baseline, stretch, etc.</p>
+        <div class="container grid g3x3" style="min-height: 300px;">
+            <div class="d1" style="align-self: start;">1</div>
+            <div class="d2" style="align-self: end;">2</div>
+            <div class="d3" style="align-self: center;">3</div>
+            <div class="d4" style="align-self: baseline;">4</div>
+            <div class="d5" style="align-self: stretch;">5</div>
+        </div>
+        <p>justify-items: center; align-items: center;</p>
+        <div class="container grid g3x3" style="min-height: 300px; justify-items: center; align-items: center;">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>assign names and cells with grid-template-areas</p>
+        <div class="container grid g3x3 templated" style="min-height: 300px;">
+            <div class="d1">1</div>
+            <div class="d2" style="grid-area: header;">2</div>
+            <div class="d3" style="grid-area: advert;">3</div>
+            <div class="d4">4</div>
+            <div class="d5" style="grid-area: footer;">5</div>
+        </div>
+        <p>numeric grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at;</p>
+        <div class="container grid g3x3" style="min-height: 300px;">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5" style="grid-area: 3/1/4/4;">5</div>
+        </div>
+        <p>grid-template-columns & rows using repeat() <a href="#" title="grid-template-columns: 1fr 50px 1fr 50px 20px;">columns what?</a></p>
+        <div class="container grid" style="min-height: 300px; grid-template-columns: repeat(2, 1fr 50px) 20px; grid-template-rows: repeat(3, 1fr);">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>grid-template-columns: minmax() magic: width below min</p>
+        <div class="container grid" style="width: 200px; grid-template-columns: repeat(3, minmax(90px, 1fr));">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>grid-template-columns: minmax() magic: width appropriate</p>
+        <div class="container grid" style="width: 400px; grid-template-columns: repeat(3, minmax(90px, 1fr));">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>width 400px; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));</p>
+        <div class="container grid" style="width: 400px; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>width 800px; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));</p>
+        <div class="container grid" style="width: 800px; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>width 200px; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));</p>
+        <div class="container grid" style="width: 200px; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>auto-FIT instead of FILL: width 800px; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));</p>
+        <div class="container grid" style="width: 800px; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>media query-controlled named grid-template-areas (bps 300 and 400)</p>
+        <div class="container grid mq">
+            <div class="d1" style="grid-area: header;">header</div>
+            <div class="d2" style="grid-area: advert;">advert</div>
+            <div class="d3" style="grid-area: content;">content</div>
+            <div class="d4" style="grid-area: footer;">footer</div>
+        </div>
+        <p>grid within a grid</p>
+        <div class="container grid mq">
+            <div class="d1" style="grid-area: header;">header</div>
+            <div class="d2" style="grid-area: advert;">advert</div>
+            <div style="grid-area: content; display: grid; grid-template-columns: 1fr 1fr; grid-gap: 5px; font-size: 12px;">
+                <div class="d3">content 1</div>
+                <div class="d3">content 2</div>
+            </div>
+            <div class="d4" style="grid-area: footer;">footer</div>
+        </div>
     </main>
 </body>
 </html>
