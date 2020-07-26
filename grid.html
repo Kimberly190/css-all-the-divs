@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid experiments</title>
+    <link rel="stylesheet" href="grid-styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1>CSS Grid experiments</h1>
+        <p>A compilation of CSS techniques presented in the freeCodeCamp <a title="freeCodeCamp tutorials" href="https://www.freecodecamp.org/learn/responsive-web-design/css-grid/">CSS Grid tutorial</a>.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">CSS: All the Divs</a></li>
+                <li><a href="flex-box.html">CSS Flexbox experiments</a></li>
+                <li>CSS Grid demo</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>5-child setup with no grid</p>
+        <div class="container">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>same structure, display:grid + grid-template-columns: 100px 100px 100px</p>
+        <div class="container grid c-3-100">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>set both columns and rows</p>
+        <div class="container grid c-3-100 r-2-50">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>example of column width specifiers: auto 50px 10% 2fr 1fr <a href="#" title="The first column is as wide as its content, the second column is 50px, the third column is 10% of its container, and for the last two columns; the remaining space is divided into three sections, two are allocated for the fourth column, and one for the fifth.">what?</a></a></p>
+        <div class="container grid" style="grid-template-columns: auto 50px 10% 2fr 1fr;">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>same structure, display:grid + 3 x 100px + grid-column-gap: 20px / grid-row-gap: 10px</p>
+        <div class="container grid c-3-100" style="grid-column-gap: 20px; grid-row-gap: 10px;">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+        <p>as above, grid-gap 20px 10px (row then column)</p>
+        <div class="container grid c-3-100" style="grid-gap: 20px 10px;">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+            <div class="d4">4</div>
+            <div class="d5">5</div>
+        </div>
+    </main>
+</body>
+</html>

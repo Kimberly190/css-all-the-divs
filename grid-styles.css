@@ -1,0 +1,47 @@
+:root {
+    font-family: sans-serif;
+}
+
+#main-header {
+    background-color: lightgray;
+    padding: 10px 30px;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 0;
+}
+
+nav li {
+    background-color: #909090;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:PaleTurquoise;}
+.d4{background:LightPink;}
+.d5{background:PaleGreen;}
+
+.container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+}
+
+.grid {
+    display: grid;
+}
+
+.c-3-100 {
+    grid-template-columns: 100px 100px 100px;grid-template-columns: 100px 100px 100px;
+}
+
+.r-2-50 {
+    grid-template-rows: 100px 100px;
+}
+
+.grid-funky {
+    grid-template-columns: auto 50px 10% 2fr 1fr;
+}
